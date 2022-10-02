@@ -19,7 +19,7 @@ for i,v in pairs(players) do
  esp.OutlineTransparency = 0
  esp.Parent = v.Character
 end
-wait(2.5)
+wait(99999999999999999999999)
 end
 end
 --menü
