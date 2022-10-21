@@ -91,7 +91,7 @@ game.DescendantAdded:connect(newobj)
 end	
 })
 CombatTab:AddTextbox({
-	Name = "Kill Aura",
+	Name = "Kill Aura (Auto Clicker)",
 	Default = "AutoCicker toggle keybind (type)",
 	TextDisappear = false,
 	Callback = function(Value)
