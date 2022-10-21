@@ -1,7 +1,30 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Sa zort adam",Name = "Cathe Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad"})
+local Window = OrionLib:MakeWindow({IntroText = "Sa zort adam",Name = "Cathe Hub v2", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad"})
 
 --menü
+--Value lar
+_G.ESP = true
+
+--function lar
+function ESP()
+    while _G.ESP == true do
+
+local players = game.Players:GetPlayers()
+
+for i,v in pairs(players) do
+ local esp = Instance.new("Highlight")
+ esp.Name = v.Name
+ esp.FillTransparency = 1
+ esp.FillColor = Color3.new(0.750635, 0.452006, 0.791011)
+ esp.OutlineColor = Color3.new(255, 255, 255)
+ esp.OutlineTransparency = 0
+ esp.Parent = v.Character
+end
+wait(99999999999999999999999)
+end
+end
+--menü
+--buton
 local TPTab = Window:MakeTab({
 	Name = "Teleport",
 	Icon = "rbxassetid://4483345998",
@@ -16,6 +39,14 @@ local PlayerTab = Window:MakeTab({
 	Name = "Player",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+PlayerTab:AddToggle({
+	Name = "ESP",
+	Default = false,
+	Callback = function(Value)
+_G.ESP = Value 
+ESP() 
+    end
 })
 TPTab:AddButton({
 	Name = "XP Area",
@@ -91,7 +122,7 @@ game.DescendantAdded:connect(newobj)
 end	
 })
 CombatTab:AddTextbox({
-	Name = "Kill Aura (Auto Clicker)",
+	Name = "Kill Aura (auto clicker)",
 	Default = "AutoCicker toggle keybind (type)",
 	TextDisappear = false,
 	Callback = function(Value)
