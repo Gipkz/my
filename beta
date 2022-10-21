@@ -2,13 +2,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({IntroText = "Sa zort adam",Name = "Cathe Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad"})
 
 --menü
-local FarmTab = Window:MakeTab({
-	Name = "Farm",
+local TPTab = Window:MakeTab({
+	Name = "Teleport",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local TPTab = Window:MakeTab({
-	Name = "Teleport",
+local CombatTab = Window:MakeTab({
+	Name = "Combat",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -90,8 +90,8 @@ end
 game.DescendantAdded:connect(newobj)
 end	
 })
-FarmTab:AddTextbox({
-	Name = "AutoClicker",
+CombatTab:AddTextbox({
+	Name = "Kill Aura",
 	Default = "AutoCicker toggle keybind (type)",
 	TextDisappear = false,
 	Callback = function(Value)
@@ -136,6 +136,12 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 	end
 end)
   	end    
+})
+CombatTab:AddButton({
+	Name = "Tp Aura",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOFICAT1/rela/main/relv2-obfuscated.lua"))()
+end   
 })
 game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
