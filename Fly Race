@@ -266,15 +266,6 @@ AutoFarm()
     end
 })
 FarmTab:AddToggle({
-	Name = "Farm Laps World 1",
-	Default = false,
-	Callback = function(Value)
-_G.AutoFarm2 = Value 
-AutoFarm2() 
-    end
-})
-
-FarmTab:AddToggle({
 	Name = "AutoFarm Space World",
 	Default = false,
 	Callback = function(Value)
@@ -282,15 +273,6 @@ _G.AutoFarm2 = Value
 AutoFarm2() 
     end
 })
-FarmTab:AddToggle({
-	Name = "Farm Laps World 2",
-	Default = false,
-	Callback = function(Value)
-_G.AutoFarm = Value 
-AutoFarm() 
-    end
-})
-
 local CreditsTab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://4483345998",
