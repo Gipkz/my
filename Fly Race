@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "Sa zort adam",Name = "Cathe Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad"})
 
-
+_G.AutoFarm2 = false
 _G.AutoFarm = false
 
 function AutoFarm()
@@ -9,10 +9,6 @@ function AutoFarm()
        local tp_table = {
             tp1 = Vector3.new(350, 100, -800),
             tp3 = Vector3.new(230000402.1016, 2800.942566, -836.438965, 1, 1.51065606e-07, 4.12622952e-14, -1.51065606e-07, 1, 6.02517289e-08, -3.21603299e-14, -6.02517289e-08, 1),
-            tp4 = Vector3.new(0, 0, 0),
-            tp5 = Vector3.new(0, 0, 0),
-            tp6 = Vector3.new(0, 0, 0),
-            tp7 = Vector3.new(0, 0, 0),
         }
         
         local tween_s = game:GetService('TweenService')
@@ -80,7 +76,132 @@ function AutoFarm()
 wait(5)
 end
 end
-
+function AutoFarm2()
+    while _G.AutoFarm2 == true do 
+       local tp_table = {
+            tp4 = Vector3.new(180, 60, -128893.43),
+            tp5 = Vector3.new(999999999999999999999999999999999999, 100, -999999999999999999999999999999),
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function tween_tp(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                 a.Completed:Wait()
+            end
+        end
+        
+        tween_tp(tp_table.tp4)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+        tween_tp(tp_table.tp5)
+wait(5)
+end
+end
 local FarmTab = Window:MakeTab({
 	Name = "Farm",
 	Icon = "rbxassetid://4483345998",
@@ -137,7 +258,32 @@ end
 })
 
 FarmTab:AddToggle({
-	Name = "AutoFarm",
+	Name = "AutoFarm First World",
+	Default = false,
+	Callback = function(Value)
+_G.AutoFarm = Value 
+AutoFarm() 
+    end
+})
+FarmTab:AddToggle({
+	Name = "Farm Laps World 1",
+	Default = false,
+	Callback = function(Value)
+_G.AutoFarm2 = Value 
+AutoFarm2() 
+    end
+})
+
+FarmTab:AddToggle({
+	Name = "AutoFarm Space World",
+	Default = false,
+	Callback = function(Value)
+_G.AutoFarm2 = Value 
+AutoFarm2() 
+    end
+})
+FarmTab:AddToggle({
+	Name = "Farm Laps World 2",
 	Default = false,
 	Callback = function(Value)
 _G.AutoFarm = Value 
@@ -150,7 +296,44 @@ local CreditsTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+PlayerTab:AddButton({
+	Name = "Anti Fall",
+	Callback = function()
+Float_Height = "100"
 
+local i=1
+G=game;
+_=wait;
+p=G:GetService("Players").LocalPlayer.Character
+p:FindFirstChild("Humanoid").HipHeight = Float_Height
+_(1.5);
+t=.4;
+n=2;
+for i=1,i do
+repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
+p:FindFirstChild("Humanoid").Health == 0
+end
+ 	end    
+})
+PlayerTab:AddButton({
+	Name = "Close AntiFall",
+	Callback = function()
+Float_Height = "0"
+
+local i=1
+G=game;
+_=wait;
+p=G:GetService("Players").LocalPlayer.Character
+p:FindFirstChild("Humanoid").HipHeight = Float_Height
+_(1.5);
+t=.4;
+n=2;
+for i=1,i do
+repeat p:FindFirstChild("Humanoid").HipHeight=Float_Height-n _(t)p:FindFirstChild("Humanoid").HipHeight=Float_Height+n _(t) until
+p:FindFirstChild("Humanoid").Health == 0
+end
+ 	end    
+})
 CreditsTab:AddParagraph("Thank you so much","Made by Cips#1508")
 CreditsTab:AddParagraph("Discord invite","https://discord.gg/zzxF82DHpX")
 
