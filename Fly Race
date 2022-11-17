@@ -27,11 +27,9 @@ function AutoFarm()
         end
         
         tween_tp(tp_table.tp1)
-    while _G.AutoFarm == true do 
+    while _G.AutoFarm == true do
         tween_tp(tp_table.tp3)
 end
-
-wait(5)
 end
 end
 function AutoFarm2()
@@ -60,7 +58,6 @@ function AutoFarm2()
     while _G.AutoFarm2 == true do 
         tween_tp(tp_table.tp5)
 end
-wait(5)
 end
 end
 local FarmTab = Window:MakeTab({
