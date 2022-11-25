@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Hi",Name = "Cathe Hub / script by Cips#1508", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad Sus"})
+local Window = OrionLib:MakeWindow({IntroText = "Hi",Name = "Cathe Hub / script by Сips#0001", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad Sus"})
 
 _G.AutoFarm2 = false
 _G.AutoFarm = false
@@ -212,7 +212,7 @@ p:FindFirstChild("Humanoid").Health == 0
 end
  	end    
 })
-CreditsTab:AddParagraph("Thank you so much","Made by Cips#1508")
+CreditsTab:AddParagraph("Thank you so much","Made by Сips#0001")
 CreditsTab:AddParagraph("Discord invite","https://discord.gg/zzxF82DHpX")
 
 OrionLib:Init()
