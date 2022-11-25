@@ -1,8 +1,10 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Sa zort adam",Name = "Cathe Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad"})
+local Window = OrionLib:MakeWindow({IntroText = "Hi",Name = "Cathe Hub / script by Cips#1508", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad Sus"})
 
 _G.AutoFarm2 = false
 _G.AutoFarm = false
+_G.AutoFarm3 = false
+
 
 function AutoFarm()
     while _G.AutoFarm == true do 
@@ -35,7 +37,7 @@ end
 function AutoFarm2()
     while _G.AutoFarm2 == true do 
        local tp_table = {
-            tp4 = Vector3.new(180, 60, -128893.43),
+            tp4 = Vector3.new(350, 100, -128923.43),
             tp5 = Vector3.new(999999999999999999999999999999999999, 100, -1836.438965),
         }
         
@@ -57,6 +59,34 @@ function AutoFarm2()
         tween_tp(tp_table.tp4)
     while _G.AutoFarm2 == true do 
         tween_tp(tp_table.tp5)
+end
+end
+end
+function AutoFarm3()
+    while _G.AutoFarm3 == true do 
+       local tp_table = {
+            tp6 = Vector3.new(350, 100, 104726),
+            tp7 = Vector3.new(999999999999999999999999999999999999, 100, 104726.945, 0.86109525, -3.57240886e-08, -0.508443713, 2.51322358e-08, 1, -2.76979346e-08, 0.508443713, 1.10722329e-08, 0.86109525),
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function tween_tp(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                 a.Completed:Wait()
+            end
+        end
+        
+        tween_tp(tp_table.tp6)
+    while _G.AutoFarm3 == true do
+        tween_tp(tp_table.tp7)
 end
 end
 end
@@ -116,7 +146,7 @@ end
 })
 
 FarmTab:AddToggle({
-	Name = "AutoFarm First World",
+	Name = "AutoFarm Earth World",
 	Default = false,
 	Callback = function(Value)
 _G.AutoFarm = Value 
@@ -129,6 +159,14 @@ FarmTab:AddToggle({
 	Callback = function(Value)
 _G.AutoFarm2 = Value 
 AutoFarm2() 
+    end
+})
+FarmTab:AddToggle({
+	Name = "AutoFarm Paradise World",
+	Default = false,
+	Callback = function(Value)
+_G.AutoFarm3 = Value 
+AutoFarm3() 
     end
 })
 local CreditsTab = Window:MakeTab({
