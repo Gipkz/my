@@ -93,8 +93,9 @@ FarmTab:AddTextbox({
 	Callback = function(Value)
 local ohInstance1 = game:GetService("Players").LocalPlayer.leaderstats[utf8.char(9889, 32, 83, 112, 101, 101, 100)]
 local ohNumber2 = (Value)
+local ohString3 = "dd"
 
-game:GetService("ReplicatedStorage").changeValue:FireServer(ohInstance1, ohNumber2)
+game:GetService("ReplicatedStorage").changeValue:FireServer(ohInstance1, ohNumber2, ohString3)
 end	
 })
 
