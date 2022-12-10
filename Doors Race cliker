@@ -8,11 +8,11 @@ _G.AutoFarm = false
 function AutoFarm()
     while _G.AutoFarm == true do
         local tp_table = {
-            tp1 = Vector3.new(-830000.312, -20.670433, 442.001587, -0.111947171, 6.17878513e-08, 0.993714154, -4.33211333e-09, 1, -6.26667358e-08, -0.993714154, -1.13202461e-08, -0.111947171),
+            tp1 = Vector3.new(-840421.875, -20.4762115, 429.474182, -0.109971613, 3.36260193e-08, 0.993934751, -3.80401204e-08, 1, -3.80400742e-08, -0.993934751, -4.1992724e-08, -0.109971613),
         }
         
         local tween_s = game:GetService('TweenService')
-        local tweeninfo = TweenInfo.new(0.01,Enum.EasingStyle.Linear)
+        local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
         
         local lp = game.Players.LocalPlayer
         
