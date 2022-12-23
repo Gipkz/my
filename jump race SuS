@@ -17,6 +17,7 @@ _G.Speed = false
 _G.AutoFarm = false
 _G.AutoFarm2 = false
 _G.AutoFarm3 = false
+_G.Rebirth = false
 
 --function lar
 function Jump()
@@ -25,6 +26,12 @@ local ohString1 = "Jump"
 
 game:GetService("ReplicatedStorage").Events.Upgrade:FireServer(ohString1)
 wait()
+end
+end
+function Rebirth()
+    while _G.Rebirth == true do
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+wait(5)
 end
 end
 function JumpUse()
@@ -410,6 +417,14 @@ FarmTab:AddToggle({
 	Callback = function(Value)
 _G.AutoFarm2 = Value 
 AutoFarm2() 
+    end
+})
+FarmTab:AddToggle({
+	Name = "Auto Rebirth",
+	Default = false,
+	Callback = function(Value)
+_G.Rebirth = Value 
+Rebirth() 
     end
 })
 FarmTab:AddToggle({
