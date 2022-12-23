@@ -420,14 +420,6 @@ AutoFarm2()
     end
 })
 FarmTab:AddToggle({
-	Name = "Auto Rebirth",
-	Default = false,
-	Callback = function(Value)
-_G.Rebirth = Value 
-Rebirth() 
-    end
-})
-FarmTab:AddToggle({
 	Name = "AutoFarm Hell Area",
 	Default = false,
 	Callback = function(Value)
@@ -478,6 +470,14 @@ end
 })
 FarmTab:AddParagraph("Warn!","Sometimes it can broke bc gui cant find children")
 PlayerTab:AddParagraph("Warn!","Sometimes it can broke bc gui cant find children")
+FarmTab:AddToggle({
+	Name = "Auto Rebirth",
+	Default = false,
+	Callback = function(Value)
+_G.Rebirth = Value 
+Rebirth() 
+    end
+})
 CrTab:AddParagraph("Script made by!","Cips#9611")
 CrTab:AddParagraph("Our discord server:","https://discord.gg/zzxF82DHpX")
 function AddTag(plr, tag, color)
