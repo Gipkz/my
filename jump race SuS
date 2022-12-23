@@ -525,9 +525,10 @@ function AddTag(plr, tag, color)
 		end
 	end
 end
-
+while wait(5) do
 AddTag("berke081","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("PeekMeep","Sona ana silkici owner", Color3.fromRGB(151, 15, 229))
+end
 OrionLib:Init()
 
 task.wait(1)
