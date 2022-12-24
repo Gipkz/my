@@ -586,7 +586,6 @@ while wait(12) do
 AddTag("Cips_9611","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("berke081","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("PeekMeep","Sona ana silkici owner", Color3.fromRGB(151, 15, 229))
-AddTag("xnqyn","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 end
 OrionLib:Init()
 
