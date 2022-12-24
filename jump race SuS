@@ -116,12 +116,13 @@ end
 function AutoFarm()
     while _G.AutoFarm == true do
         local tp_table = {
-            tp1 = Vector3.new(-441.460205, 161.073425, -379.825745, 0.464990586, 8.88110264e-07, 0.885315597, 1.24965283e-09, 1, -1.00381305e-06, -0.885315597, 4.67869938e-07, 0.464990586),
+            tp1 = Vector3.new(-441.460205, 195.073425, -379.825745, 0.464990586, 8.88110264e-07, 0.885315597, 1.24965283e-09, 1, -1.00381305e-06, -0.885315597, 4.67869938e-07, 0.464990586),
+	    tp32 = Vector3.new(-441.460205, 158.073425, -379.825745, 0.464990586, 8.88110264e-07, 0.885315597, 1.24965283e-09, 1, -1.00381305e-06, -0.885315597, 4.67869938e-07, 0.464990586),
             tp3 = Vector3.new(-441.460205, 11161.073425, -379.825745, 0.464990586, 8.88110264e-07, 0.885315597, 1.24965283e-09, 1, -1.00381305e-06, -0.885315597, 4.67869938e-07, 0.464990586),
         }
         
         local tween_s = game:GetService('TweenService')
-        local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+        local tweeninfo = TweenInfo.new(0.1,Enum.EasingStyle.Linear)
         
         local lp = game.Players.LocalPlayer
         
@@ -135,6 +136,19 @@ function AutoFarm()
             end
         end
         
+        tween_tp(tp_table.tp32)        
+        tween_tp(tp_table.tp1)
+	tween_tp(tp_table.tp32)        
+        tween_tp(tp_table.tp1)
+	tween_tp(tp_table.tp32)        
+        tween_tp(tp_table.tp1)
+	tween_tp(tp_table.tp32)        
+        tween_tp(tp_table.tp1)
+	tween_tp(tp_table.tp32)        
+        tween_tp(tp_table.tp1)
+	tween_tp(tp_table.tp32)        
+        tween_tp(tp_table.tp1)
+	tween_tp(tp_table.tp32)        
         tween_tp(tp_table.tp1)
 wait()
     while _G.AutoFarm == true do
@@ -190,12 +204,13 @@ end
 function AutoFarm3()
     while _G.AutoFarm3 == true do
         local tp_table = {
-            tp3 = Vector3.new(3236.95679, 162.912582, -1459.03821, 0.961033344, 0, 0.276432484, 0, 1, 0, -0.276432484, 0, 0.961033344),
+            tp3 = Vector3.new(3236.95679, 195.912582, -1459.03821, 0.961033344, 0, 0.276432484, 0, 1, 0, -0.276432484, 0, 0.961033344),
+	    tp33 = Vector3.new(3236.95679, 158.912582, -1459.03821, 0.961033344, 0, 0.276432484, 0, 1, 0, -0.276432484, 0, 0.961033344),
             tp5 = Vector3.new(3236.95679, 160002.912582, -1459.03821, 0.961033344, 0, 0.276432484, 0, 1, 0, -0.276432484, 0, 0.961033344),
         }
         
         local tween_s = game:GetService('TweenService')
-        local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+        local tweeninfo = TweenInfo.new(0.1,Enum.EasingStyle.Linear)
         
         local lp = game.Players.LocalPlayer
         
@@ -209,6 +224,19 @@ function AutoFarm3()
             end
         end
         
+	tween_tp(tp_table.tp33)
+        tween_tp(tp_table.tp3)
+	tween_tp(tp_table.tp33)
+        tween_tp(tp_table.tp3)
+	tween_tp(tp_table.tp33)
+        tween_tp(tp_table.tp3)
+	tween_tp(tp_table.tp33)
+        tween_tp(tp_table.tp3)
+	tween_tp(tp_table.tp33)
+        tween_tp(tp_table.tp3)
+	tween_tp(tp_table.tp33)
+        tween_tp(tp_table.tp3)
+	tween_tp(tp_table.tp33)
         tween_tp(tp_table.tp3)
 wait()
     while _G.AutoFarm3 == true do
