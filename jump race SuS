@@ -18,6 +18,7 @@ _G.AutoFarm = false
 _G.AutoFarm2 = false
 _G.AutoFarm3 = false
 _G.Rebirth = false
+_G.FastRebirth = false
 
 --function lar
 function Jump()
@@ -32,6 +33,18 @@ function Rebirth()
     while _G.Rebirth == true do
 game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 wait(5)
+end
+end
+function FastRebirth()
+    while _G.FastRebirth == true do
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+wait()
 end
 end
 function JumpUse()
@@ -496,6 +509,14 @@ FarmTab:AddToggle({
 	Callback = function(Value)
 _G.Rebirth = Value 
 Rebirth() 
+    end
+})
+FarmTab:AddToggle({
+	Name = "Auto FastRebirth",
+	Default = false,
+	Callback = function(Value)
+_G.FastRebirth = Value 
+FastRebirth() 
     end
 })
 FarmTab:AddParagraph("Warn!","Sometimes it can broke bc gui cant find children")
