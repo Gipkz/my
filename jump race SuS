@@ -44,6 +44,8 @@ game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 wait()
 end
 end
@@ -512,7 +514,7 @@ Rebirth()
     end
 })
 FarmTab:AddToggle({
-	Name = "Auto FastRebirth",
+	Name = "Rebirth Exploit",
 	Default = false,
 	Callback = function(Value)
 _G.FastRebirth = Value 
@@ -520,6 +522,7 @@ FastRebirth()
     end
 })
 FarmTab:AddParagraph("Warn!","Sometimes it can broke bc gui cant find children")
+FarmTab:AddParagraph("Rebirth exploit!","Use this when u have enough money to rebirth")
 PlayerTab:AddParagraph("Warn!","Sometimes it can broke bc gui cant find children")
 CrTab:AddParagraph("Script made by!","Cips#9611")
 CrTab:AddParagraph("Our discord server:","https://discord.gg/zzxF82DHpX")
