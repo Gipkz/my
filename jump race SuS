@@ -43,9 +43,6 @@ game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 wait()
 end
 end
