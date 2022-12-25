@@ -35,17 +35,6 @@ game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
 wait(5)
 end
 end
-function FastRebirth()
-    while _G.FastRebirth == true do
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-game:GetService("ReplicatedStorage").Events.Rebirth:FireServer()
-wait()
-end
-end
 function JumpUse()
     while _G.JumpUse == true do
 game:GetService("ReplicatedStorage").Events.JumpUse:FireServer()
@@ -510,16 +499,7 @@ _G.Rebirth = Value
 Rebirth() 
     end
 })
-FarmTab:AddToggle({
-	Name = "Rebirth Exploit",
-	Default = false,
-	Callback = function(Value)
-_G.FastRebirth = Value 
-FastRebirth() 
-    end
-})
 FarmTab:AddParagraph("Warn!","Sometimes it can broke bc gui cant find children")
-FarmTab:AddParagraph("Rebirth exploit!","Use this when u have enough money to rebirth")
 PlayerTab:AddParagraph("Warn!","Sometimes it can broke bc gui cant find children")
 CrTab:AddParagraph("Script made by!","Cips#9611")
 CrTab:AddParagraph("Our discord server:","https://discord.gg/zzxF82DHpX")
