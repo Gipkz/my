@@ -17,6 +17,7 @@ _G.Speed = false
 _G.AutoFarm = false
 _G.AutoFarm2 = false
 _G.AutoFarm3 = false
+_G.AutoFarm4 = false
 _G.Rebirth = false
 _G.FastRebirth = false
 
@@ -230,6 +231,50 @@ function AutoFarm3()
 wait()
     while _G.AutoFarm3 == true do
         tween_tp(tp_table.tp5)
+wait()
+end
+    end
+end        
+function AutoFarm4()
+    while _G.AutoFarm4 == true do
+        local tp_table = {
+            tp9 = Vector3.new(-2656, 195.912582, 269.787567, 0.961033344, 0, 0.276432484, 0, 1, 0, -0.276432484, 0, 0.961033344),
+	    tp99 = Vector3.new(-2656, 148.912582, 269.787567, 0.961033344, 0, 0.276432484, 0, 1, 0, -0.276432484, 0, 0.961033344),
+            tp17 = Vector3.new(-2656, 160002.912582, 269.787567, 0.961033344, 0, 0.276432484, 0, 1, 0, -0.276432484, 0, 0.961033344),
+        }
+        
+        local tween_s = game:GetService('TweenService')
+        local tweeninfo = TweenInfo.new(0.2,Enum.EasingStyle.Linear)
+        
+        local lp = game.Players.LocalPlayer
+        
+        function tween_tp(v)
+            if lp.Character and 
+            lp.Character:FindFirstChild('HumanoidRootPart') then
+                local cf = CFrame.new(v)
+                local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+                a:Play()
+                 a.Completed:Wait()
+            end
+        end
+        
+	tween_tp(tp_table.tp99)
+        tween_tp(tp_table.tp9)
+	tween_tp(tp_table.tp99)
+        tween_tp(tp_table.tp9)
+	tween_tp(tp_table.tp99)
+        tween_tp(tp_table.tp9)
+	tween_tp(tp_table.tp99)
+        tween_tp(tp_table.tp9)
+	tween_tp(tp_table.tp99)
+        tween_tp(tp_table.tp9)
+	tween_tp(tp_table.tp99)
+        tween_tp(tp_table.tp9)
+	tween_tp(tp_table.tp99)
+        tween_tp(tp_table.tp9)
+wait()
+    while _G.AutoFarm4 == true do
+        tween_tp(tp_table.tp17)
 wait()
 end
     end
@@ -456,6 +501,14 @@ FarmTab:AddToggle({
 	Callback = function(Value)
 _G.AutoFarm3 = Value 
 AutoFarm3() 
+    end
+})
+FarmTab:AddToggle({
+	Name = "AutoFarm Event area",
+	Default = false,
+	Callback = function(Value)
+_G.AutoFarm4 = Value 
+AutoFarm4() 
     end
 })
 PlayerTab:AddButton({
