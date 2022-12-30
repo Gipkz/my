@@ -351,6 +351,11 @@ local FarmTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+local ExploitTab = Window:MakeTab({
+	Name = "Gamepass Exploit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 local CrTab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://4483345998",
@@ -616,6 +621,78 @@ function AddTag(plr, tag, color)
 		end
 	end
 end
+ExploitTab:AddButton({
+	Name = "Get 99x stud gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112787976 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
+ExploitTab:AddButton({
+	Name = "Get VIP gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112786674 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
+ExploitTab:AddButton({
+	Name = "Get 2x rebirth gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112786352 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
+ExploitTab:AddButton({
+	Name = "Get Unlock All Worlds gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112788263 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
+ExploitTab:AddButton({
+	Name = "Get Auto Rebirth gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112786409 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
+ExploitTab:AddButton({
+	Name = "Get +5 pet equip gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112786278 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
+ExploitTab:AddButton({
+	Name = "Get +3 pet equip gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112786223 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
+ExploitTab:AddButton({
+	Name = "Get 2x Gem gamepass (u need 3 wins)",
+	Callback = function()
+local ohNumber1 = 112786546 --game pass id
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.AutoJump.Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
+end 
+})
 while wait(12) do
 AddTag("ihzpa","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("IlIlIlIIIlIlllllIl","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
