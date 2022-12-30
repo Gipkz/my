@@ -686,6 +686,8 @@ end
 })
 while wait(12) do
 AddTag("ihzpa","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
+AddTag("KabasakaIHayati","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
+AddTag("Leviiistaken","Levye Adam", Color3.fromRGB(0, 0, 0))
 AddTag("IlIlIlIIIlIlllllIl","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("ZishuBabax","Sona ana silkici owner", Color3.fromRGB(151, 15, 229))
 end
