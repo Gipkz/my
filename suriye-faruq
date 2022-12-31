@@ -747,6 +747,15 @@ local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames
 game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohNumber1, ohInstance2)
 end 
 })
+ExploitTab:AddButton({
+	Name = "Get VIP gamepass (u need 2 wins)",
+	Callback = function()
+local ohString1 = "112785702"
+local ohInstance2 = game:GetService("Players").LocalPlayer.PlayerGui.Main.Frames.ShopFrame.Inventory.Gamepasses.kucukler["112786772"].Win.Price
+
+game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohString1, ohInstance2)
+end 
+})
 while wait(12) do
 AddTag("ihzpa","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("KabasakaIHayati","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
