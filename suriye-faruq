@@ -347,7 +347,7 @@ local FarmTab = Window:MakeTab({
 	PremiumOnly = false
 })
 local ExploitTab = Window:MakeTab({
-	Name = "Gamepass Exploit",
+	Name = "Gamepass Exp",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
