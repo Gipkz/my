@@ -286,11 +286,6 @@ local PlayerTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local TPTab = Window:MakeTab({
-	Name = "Teleport",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
 local ShopTab = Window:MakeTab({
 	Name = "Uprades",
 	Icon = "rbxassetid://4483345998",
@@ -523,24 +518,6 @@ local Player = game:GetService("Players").LocalPlayer
 game:GetService("Workspace")[Player.Name].Highlight:Destroy()
 end 
 })
-TPTab:AddButton({
-	Name = "Teleport Hell",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3274.24512, 161.020355, -1337.35522, 0.622144759, 2.0047807e-08, 0.782902241, 5.74020547e-08, 1, -7.12224235e-08, -0.782902241, 8.92508538e-08, 0.622144759)
-end 
-})
-TPTab:AddButton({
-	Name = "Teleport Space",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1395.66565, 161.020355, -792.889343, 0.995041609, -1.17738903e-08, -0.0994595438, 2.11541593e-08, 1, 9.32578033e-08, 0.0994595438, -9.48993772e-08, 0.995041609)
-end 
-})
-TPTab:AddButton({
-	Name = "Teleport 1st world",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-427.087799, 161.02034, -256.230408, 0.838704407, 4.29326308e-09, 0.544586957, 1.91407157e-09, 1, -1.08313341e-08, -0.544586957, 1.01266657e-08, 0.838704407)
-end 
-})
 PlayerTab:AddButton({
 	Name = "Always give speed",
 	Callback = function()
@@ -757,7 +734,6 @@ game:GetService("ReplicatedStorage").Events.BuyGamepass:FireServer(ohString1, oh
 end 
 })
 while wait(12) do
-AddTag("ihzpa","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("KabasakaIHayati","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
 AddTag("Leviiistaken","Levye Adam", Color3.fromRGB(0, 0, 0))
 AddTag("IlIlIlIIIlIlllllIl","Cips aga hile owner", Color3.fromRGB(151, 15, 229))
