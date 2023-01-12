@@ -314,8 +314,6 @@ function AutoFarm5()
         tween_tp(tp_table.tp65)
 	tween_tp(tp_table.tp66)
         tween_tp(tp_table.tp65)
-	tween_tp(tp_table.tp66)
-        tween_tp(tp_table.tp65)
 wait()
     while _G.AutoFarm5 == true do
         tween_tp(tp_table.tp67)
