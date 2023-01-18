@@ -98,7 +98,7 @@ local function getClosestPlayer()
     return Closest
 end
 
-local Window = Library:CreateWindow("CipsWare")
+local Window = Library:CreateWindow("Project PZ")
 
 local GeneralTab = Window:AddTab("Aimbot")
 local MainBOX = GeneralTab:AddLeftTabbox("Main")
